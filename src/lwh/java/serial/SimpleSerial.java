@@ -1,6 +1,7 @@
 package lwh.java.serial;
 
 import java.io.*;
+import java.util.*;
 
 public class SimpleSerial {
 
@@ -22,5 +23,19 @@ public class SimpleSerial {
         in.close();
 
         System.out.println(newPerson);
+
+        Map<String, String> map = new HashMap<>();
+        Set<String> keys = map.keySet();
+        Iterator<String> itr = keys.iterator();
+        while(itr.hasNext()){
+            String key = itr.next();
+            System.out.println(key + ", " + map.get(key));
+        }
+
+        for(Map.Entry<String, String> entry : map.entrySet()){
+            String key = entry.getKey();
+            String value = entry.getValue();
+        }
+
     }
 }
