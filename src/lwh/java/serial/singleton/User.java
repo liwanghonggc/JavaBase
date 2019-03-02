@@ -26,6 +26,7 @@ public class User implements Serializable{
         return InstanceHolder.instance;
     }
 
+
     private Object readResolve() throws ObjectStreamException{
         return InstanceHolder.instance;
     }
