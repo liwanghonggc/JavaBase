@@ -3,7 +3,7 @@ package lwh.java.clone.shallowclone;
 public class CloneTest {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Person person = new Person(23, "lwh", new Address("南京", "江苏"));
+        Person person = new Person(23, "lwh", new Address("镇江", "江苏"));
 
         Person newPerson = (Person)person.clone();
 

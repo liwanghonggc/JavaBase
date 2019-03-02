@@ -7,8 +7,8 @@ public class PrintA_To_Z_1 {
     static class PrintThread implements Runnable{
         @Override
         public void run(){
-           int cur = Integer.parseInt(Thread.currentThread().getName());
            while (i < 26){
+               int cur = Integer.parseInt(Thread.currentThread().getName());
                if (i % 3 == cur - 1){
                    System.out.println(Thread.currentThread().getName() + (char)('A' + i));
                    ++i;
