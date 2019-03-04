@@ -1,6 +1,5 @@
 package lwh.java.generic;
 
-import lwh.java.innerClass.OuterClass2;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
